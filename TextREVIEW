@@ -1,1 +1,44 @@
+//Global Vaeiables
+ float textRectX, textRectY, textRectWidth, textRectHeight;
+ Pfont font;
+ color pourleInnk=#
+ //
+void setup() {
+ size(700,500); //fullScreen(); //displayWidth & displayHeight
+ //
+ //Population
+ textRectX = width*1/3;
+ textRectY = height*1/10;
+ textRectWidth = width*4/5;
+ textRectHeight = height*1/10;
+ rect( textReactX, textRectY, textRectWidth, textRectHeight );
+ //
+ printin("Start of Console");
+ string[] fontList = Pfont.list() //to list all fonts available on system
+printArray(fontList); //For listing allowing possible fonts to chooose, the createFont;
+//
+// Choose your font now
+font = createFont ("Harrington", 10); //Verify font exists
+//Tools / Create Font / Find Font / Do Not Press "OK", known bug
+//
+fill(purpleInk); //Ink, hexidecimal copied from Color selector
+textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+//Horizonal Values (x): [LEFT]  | CENTER  | BOTTOM  |  BASELINE]
+int textSize = 30; //Change the numberuntil it fits, largest font size
+textFont, textSize);
+//
+//Printing Text on the CANVAS
+text( string, textRectX, textRectY, textRectWidth, textRectHeight );
+//
+fill(resetWhiteInk);
+
+}//End Set Up
+//
+void draw() {}//End Draw
+//
+void keyPressed() {}//End keyPressed
+//
+void mousePressed() {}//End mousePressed
+//
+//End Main Program
 
